@@ -1,8 +1,7 @@
 from setuptools import setup
 import codecs
-import os
 
-VERSION = "0.0.25"
+VERSION = "0.0.26"
 DESCRIPTION = "Getting indicators based on smart money concepts or ICT"
 
 # read the contents of the README file
@@ -13,12 +12,12 @@ with codecs.open("README.md", encoding="utf-8") as f:
 setup(
     name="smartmoneyconcepts",
     version=VERSION,
-    author="Joshua Attridge",
+    author="RedzLab",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=["smartmoneyconcepts"],
-    install_requires=["pandas==2.0.2", "numpy==1.24.3", "numba==0.58.1"],
+    install_requires=["pandas", "numpy", "numba"],
     keywords=[
         "smart",
         "money",
@@ -33,7 +32,7 @@ setup(
         "blocks",
         "liquidity",
     ],
-    url="https://github.com/joshyattridge/smartmoneyconcepts",
+    url="https://github.com/RedzLab/smart-money-concepts",
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
