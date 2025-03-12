@@ -718,7 +718,6 @@ class smc:
                 "high": "max",
                 "low": "min",
                 "close": "last",
-                "volume": "sum",
             }
         ).dropna()
 
