@@ -714,10 +714,8 @@ class smc:
 
         resampled_ohlc = ohlc.resample(time_frame).agg(
             {
-                "open": "first",
                 "high": "max",
                 "low": "min",
-                "close": "last",
             }
         ).dropna()
 
